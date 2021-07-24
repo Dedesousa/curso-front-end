@@ -1,0 +1,165 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: rgb(7, 7, 7);
+    padding: 3%;
+    height: auto;
+    text-align: center;
+    color: whitesmoke;
+}
+#dadosForm{
+    background-color: white;
+    color:whitesmoke;
+    text-align: center;
+    width: 98%;
+    margin-left: 1%;
+    height: auto;
+}
+label{
+    display: block;
+    margin-top: 2%;
+}
+input{
+    width: 80%;
+}
+#botaoCadastro{
+    width: 50%;
+    margin: 2% 0%;
+    cursor: pointer;
+}
+#formulario{
+  background-color: rgb(243, 240, 235);
+  color:black;
+  padding:1%;
+  border-radius: 20px;
+}
+main{
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+    color:black;
+}
+nav{
+    margin-top: 2%;
+}
+#container{
+    border:solid black;
+    display: flex;
+    flex-wrap: wrap;
+    width: 98%;
+    margin-left: 1%;
+    margin-top: 2%;
+}
+.item{
+    border-color: rgb(94, 72, 40);
+    width: 22%;
+    height: auto;
+    margin-left: 2%;
+}
+.item:hover{
+   border:solid black;
+}
+.imagem{
+    width: 90%;
+}
+.btn{
+    width: 60%;
+    margin: 2%;
+    cursor: pointer;
+    background-color: rgba(128, 128, 128, 0.899);
+    color:white;
+    border-color:black;
+    border-radius: 20px;
+    padding: 1%;
+    border: solid black;
+}
+#comprando{
+    width: 50%;
+    background-color: whitesmoke;
+    color:black;
+    border:solid rgb(19, 18, 18);
+    margin-left: 25%;
+    position: absolute;
+    top:0px;
+    border-radius: 20px;
+    display: none;
+}
+#mudaFoto{
+    width: 80%;
+    margin-top:2%;
+}
+#finalizaCompra{
+    margin:2% 0%;
+    padding: 1%;
+    border-radius: 20px;
+    border:solid black;
+}
+footer{
+    padding: 2%;
+    background-color: black;
+    color: whitesmoke;
+}
+.ajustar{
+    margin-top: 12%;
+}
+
+@media (max-width:1920px){
+    .item{
+        border-color: rgb(94, 72, 40);
+        width: 22%;
+        height: auto;
+        margin-left: 2%;
+        font-size: 15px;
+    }
+    .ajustar{
+        margin-top: 19%;
+    }    
+}
+
+@media (max-width:768px){
+    .item{
+        border-color: rgb(94, 72, 40);
+        width: 46%;
+        height: auto;
+        margin-left: 2%;
+        font-size: 13px;
+    } 
+    #comprando{
+        width: 80%;
+        background-color: whitesmoke;
+        color:black;
+        border:solid rgb(19, 18, 18);
+        margin-left: 10%;
+        position: absolute;
+        top:0px;
+        border-radius: 20px;
+        display: none;
+    }        
+}
+
+@media (max-width:360px){
+    .item{
+        border-color: rgb(94, 72, 40);
+        width: 96%;
+        height: auto;
+        margin-left: 2%;
+        font-size: 13px;
+    } 
+   #comprando{
+        width: 98%;
+        background-color: whitesmoke;
+        color:black;
+        border:solid rgb(19, 18, 18);
+        margin-left: 1%;
+        position: absolute;
+        top:0px;
+        border-radius: 20px;
+        display: none;
+    }        
+}
