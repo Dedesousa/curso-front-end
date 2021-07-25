@@ -1,10 +1,10 @@
         let botaoCadastro = document.getElementById("botaoCadastro");
-        let nome = document.getElementById("nome");
-        let telefone = document.getElementById("telefone");
-        let estado = document.getElementById("estado");
-        let cidade = document.getElementById("cidade");
-        let numero = document.getElementById("numero");
-        let email = document.getElementById("email");
+        let nome = document.getElementById("nome").value;
+        let telefone = document.getElementById("telefone").value;
+        let estado = document.getElementById("estado").value;
+        let cidade = document.getElementById("cidade").value;
+        let numero = document.getElementById("numero").value;
+        let email = document.getElementById("email").value;
         let btn = document.querySelectorAll(".btn");
         let finalizaCompra = document.getElementById("finalizaCompra");
         let mudaFoto = document.getElementById("mudaFoto");
@@ -128,11 +128,11 @@
     function teste(){
         let formulario = [{
             nome:nome.value,
-            telefone:telefone.value,
-            estado:estado.value,
-            cidade:cidade.value,
-            bairro:bairro.value,
-            email:email.value
+            telefone:telefone,
+            estado:estado,
+            cidade:cidade,
+            bairro:bairro,
+            email:email
         }];
          let dados = localStorage.setItem("salvaDados", JSON.stringify(formulario));
          
