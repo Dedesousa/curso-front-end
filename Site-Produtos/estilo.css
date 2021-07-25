@@ -18,6 +18,15 @@ header{
     width: 98%;
     margin-left: 1%;
     height: auto;
+    border: solid black;
+    position: absolute;
+    top:5%;
+    display: none;
+}
+#lincou{
+    border:none;
+    background-color: white;
+    cursor: pointer;
 }
 label{
     display: block;
