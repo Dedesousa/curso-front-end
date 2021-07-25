@@ -10,6 +10,21 @@
         let mudaFoto = document.getElementById("mudaFoto");
         let descreverCompra = document.getElementById("descreverCompra");
 
+          function teste(){
+        let formulario = [{
+            nome:nome.value,
+            telefone:telefone,
+            estado:estado,
+            cidade:cidade,
+            bairro:bairro,
+            email:email
+        }];
+         let dados = localStorage.setItem("salvaDados", JSON.stringify(formulario));
+         
+    
+    }
+    botaoCadastro.addEventListener("click",teste);
+
       for(let i =0; i < btn.length; i++){
         btn[i].addEventListener("click",()=>{
             let produtos = [{
@@ -118,27 +133,10 @@
         })
       }
        
-       // finaliza compra 
-       
       function voltar(){
           comprando.style.display="none";
       }
       finalizaCompra.addEventListener("click",voltar);
-
-    function teste(){
-        let formulario = [{
-            nome:nome.value,
-            telefone:telefone,
-            estado:estado,
-            cidade:cidade,
-            bairro:bairro,
-            email:email
-        }];
-         let dados = localStorage.setItem("salvaDados", JSON.stringify(formulario));
-         
-    
-    }
-    botaoCadastro.addEventListener("click",teste);
 
 
     
