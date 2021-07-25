@@ -1,15 +1,18 @@
-        let botaoCadastro = document.getElementById("botaoCadastro");
-        let nome = document.getElementById("nome").value;
-        let telefone = document.getElementById("telefone").value;
-        let estado = document.getElementById("estado").value;
-        let cidade = document.getElementById("cidade").value;
-        let numero = document.getElementById("numero").value;
-        let email = document.getElementById("email").value;
+  let botaoCadastro = document.getElementById("botaoCadastro");
+        let nome = document.getElementById("nome");
+        let telefone = document.getElementById("telefone");
+        let estado = document.getElementById("estado");
+        let cidade = document.getElementById("cidade");
+        let numero = document.getElementById("numero");
+        let email = document.getElementById("email");
         let btn = document.querySelectorAll(".btn");
         let finalizaCompra = document.getElementById("finalizaCompra");
         let mudaFoto = document.getElementById("mudaFoto");
         let descreverCompra = document.getElementById("descreverCompra");
-
+        let lincou = document.getElementById("lincou");
+        let dadosForm = document.getElementById("dadosForm");
+        let container = document.querySelector("#container");
+    
       for(let i =0; i < btn.length; i++){
         btn[i].addEventListener("click",()=>{
             let produtos = [{
@@ -116,28 +119,30 @@
                 descreverCompra.innerText="Smart TV Android LED 32" +"Semp 32S5300 Bluetooth 2 HDMI 1 USB Controle Remoto com Comando de Voz e Google Assistant ";
             }
         })
-      }
+    }
+       
+       // finaliza compra 
        
       function voltar(){
           comprando.style.display="none";
       }
       finalizaCompra.addEventListener("click",voltar);
 
-       function teste(){
+      function teste(){
         let formulario = [{
             nome:nome.value,
-            telefone:telefone,
-            estado:estado,
-            cidade:cidade,
-            bairro:bairro,
-            email:email
+            telefone:telefone.value,
+            estado:estado.value,
+            cidade:cidade.value,
+            bairro:bairro.value,
+            email:email.value
         }];
-         let dados = localStorage.setItem("salvaDados", JSON.stringify(formulario));
-         
     
+         let dados = localStorage.setItem("salvaDados", JSON.stringify(formulario)); 
     }
-    botaoCadastro.addEventListener("click",teste);
-
-
-    
-    
+     botaoCadastro.addEventListener("click",teste);
+       function abrir(){
+         dadosForm.style.display="block";
+         container.style.display="none";
+       }
+     lincou.addEventListener("click",abrir);
